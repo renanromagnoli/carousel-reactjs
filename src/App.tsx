@@ -1,15 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 export default function App() {
     
     const [data, setData] = useState([])
+    const carousel = useRef(null)
     
     useEffect(() => {
         fetch('/public/static/shoes.json')
             .then((response) => response.json())
             .then(setData)
     }, [])
+    
+    const handleLeftClick = (e) => {
+        e.preventDefault()
+        carousel.current.scrollLeft -= carousel.current.offsetWidth
+    }
+    const handleRightClick = (e) => {
+        e.preventDefault()
+        carousel.current.scrollLeft += carousel.current.offsetWidth
+    }
     
     if(!data || !data.length) return null
     
@@ -18,7 +28,7 @@ export default function App() {
        <div className="logo">
            <img src="https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png" alt="Super Shoes"/>
        </div>
-       <div className="carousel">
+       <div className="carousel" ref={carousel}>
            {data.map((item) => {
                return (
                 <div className="item" key={item.id}>
@@ -27,12 +37,16 @@ export default function App() {
                     </div>
                     <div className="info">
                         <span className="name">{item.name}</span>
-                        <span className="oldPrice">item.oldPrice</span>
-                        <span className="price">item.price</span>
+                        <span className="oldPrice">{item.oldPrice}</span>
+                        <span className="price">{item.price}</span>
                     </div>
                 </div>
                )
            })}
+       </div>
+       <div className="buttons">
+           <button onClick={handleLeftClick}>Left</button>
+           <button onClick={handleRightClick}>Right</button>
        </div>
    </div>
   );

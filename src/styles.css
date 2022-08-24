@@ -24,6 +24,10 @@ body {
   scroll-behavior: smooth; /* scroll suave */
 }
 
+.container .carousel::-webkit-scrollbar {
+  display: none;
+}
+
 .container .carousel .item {
   background-color: white;
   margin: 10px;
@@ -72,4 +76,15 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   background-color: #ff7e3b;
+}
+
+.container .buttons {
+  width: 100%;
+  text-align: center;
+}
+
+.container .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
