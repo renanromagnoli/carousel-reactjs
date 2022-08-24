@@ -1,0 +1,12 @@
+[
+    {id: '123456', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '123457', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '123458', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '123459', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234510', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234511', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234512', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234513', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234514'', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'},
+    {id: '1234515', name: 'Tênis Nike', price: 249.00, oldPrice: 349.99, image: 'https://www.tailorbrands.com/wp-content/uploads/2021/01/nike-logo.png'}
+]
